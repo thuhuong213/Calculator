@@ -16,5 +16,18 @@ namespace Calculator
         {
             InitializeComponent();
         }
+
+        private void label3_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void textBox2_TextChanged(object sender, EventArgs e)
+        {
+            double a = double.Parse(txtSoa.Text);
+            double b = double.Parse(txtSob.Text);
+            double c = a + b;
+            txtKQ.Text = c.ToString();
+        }
     }
 }
